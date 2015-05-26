@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Publish</key>
+	<string>1</string>
+	<key>DevelopURL</key>
+	<string>http://192.168.1.222:8081/imove-api/api</string>
+	<key>PublishURL</key>
+	<string>http://223.255.7.194:9000/imove-api-test/api</string>
+	<key>UploadURL</key>
+	<string>http://223.255.7.194:9000/sport-upload/common/appUpload.do</string>
+	<key>ResourceURL</key>
+	<string>http://223.255.7.194:9000/sport-upload</string>
+</dict>
+</plist>
