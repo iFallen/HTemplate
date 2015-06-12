@@ -77,4 +77,13 @@
                                  font:(UIFont *)font
                             limitSize:(CGSize)limitSize;
 
+/**
+ *  设置文本
+ *
+ *  @param text 区分Number string 和null
+ *
+ *  @return return value description
+ */
++(NSString *)checkText:(id)text;
+
 @end

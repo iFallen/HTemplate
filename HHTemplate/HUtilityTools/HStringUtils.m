@@ -54,11 +54,27 @@
     return YES;
 }
 
+
+
 +(CGSize)caculateStringSizeWithString:(NSString *)string font:(UIFont *)font limitSize:(CGSize)limitSize{
     NSDictionary *attribute = @{NSFontAttributeName: font};
     //    CGSizeMake(100, MAXFLOAT)
     CGSize textSize = [string boundingRectWithSize:limitSize options:NSStringDrawingUsesLineFragmentOrigin |NSStringDrawingTruncatesLastVisibleLine attributes:attribute context:nil].size;
     return textSize;
+}
+
+
++(NSString *)checkText:(id)text{
+    if ([text isKindOfClass:[NSNumber class]]) {
+        return [text stringValue];
+    }else{
+        if ([self isTextEmpty:text]) {
+            return @"";
+        }else{
+            return [NSString stringWithFormat:@"%@",text];
+        }
+    }
+    return @"";
 }
 
 @end

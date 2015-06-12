@@ -30,6 +30,14 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
+    NSLog(@"%@",[HStringUtils checkText:[NSNumber numberWithInt:111]]);
+    NSLog(@"%@",[HStringUtils checkText:[NSNumber numberWithInt:0]]);
+    NSLog(@"==%@==",[HStringUtils checkText:@""]);
+    NSLog(@"==%@==",[HStringUtils checkText:nil]);
+    NSLog(@"==%@==",[HStringUtils checkText:[NSNull null]]);
+    NSLog(@"==%@==",[HStringUtils checkText:@"123"]);
+    return YES;
+    
 //    [[NSBundle mainBundle] pathForResource:<#(NSString *)#> ofType:<#(NSString *)#>];
 //    [[NSBundle mainBundle] pathForAuxiliaryExecutable:@""];
     
